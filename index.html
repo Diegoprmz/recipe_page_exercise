@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+    </style>
   <title>Frontend Mentor | Recipe page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<main class="background">
   <section class="main">
-    <img src="./assets/images/image-omelette.jpeg" alt="Omelette">
+    <img class="main_image" src="./assets/images/image-omelette.jpeg" alt="Omelette">
     <h1 class="recipe_title">Simple Omelette Recipe</h1>
 
     <p class="recipe_description">
@@ -26,10 +26,10 @@
 
     <div class="recipe_preparation">
       <h2 class="recipe_preparation_title">Preparation time</h2>
-      <ul>
-        <li class="recipe_preparation_list">Total: Approximately 10 minutes</li>
-        <li class="recipe_preparation_list">Preparation: 5 minutes</li>
-        <li class="recipe_preparation_list">Cooking: 5 minutes</li>
+      <ul class="recipe_ul">
+        <li class="recipe_preparation_list"><b>Total: </b>   Approximately 10 minutes</li>
+        <li class="recipe_preparation_list"><b>Preparation: </b>   5 minutes</li>
+        <li class="recipe_preparation_list"><b>Cooking: </b>   5 minutes</li>
       </ul>
     </div>
 
@@ -79,7 +79,7 @@
       <p class="nutrition_table_item">22g</p>
     </div>
   </section>
-  
-  
+</main>
+
 </body>
 </html>
