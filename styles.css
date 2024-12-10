@@ -5,7 +5,7 @@
     --fondo-roca-medio: hsl(30, 18%, 97%);
     --fondo-roca-fuerte: hsl(30, 10%, 34%);
     --fondo-roca-solido: hsl(24, 5%, 18%);
-    --café-solido:hsl(14, 45%, 36%);
+    --cafe-solido:hsl(14, 45%, 36%);
 }
 
 * {
@@ -74,6 +74,7 @@ body {
 .recipe_ul {
     list-style: none; 
     margin-left: 12px;
+    line-height: 1.6;
 }
 
 .recipe_ul .recipe_preparation_list::before {
@@ -93,4 +94,115 @@ body {
 b {
     font-weight: 650;
     color: var(--fondo-roca-solido);
+}
+
+.recipe_ingredients_title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2.3em;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cafe-solido);
+}
+
+.recipe_ingredients {
+    margin-bottom: 30px;
+}
+
+.recipe_list_ingredients {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.recipe_list_ingredients .recipe_ingredientes_list::before {
+    content: "•"; 
+    color: var(--cafe-solido);
+    font-size: 1.4em;
+    margin-right: 20px; 
+}
+
+.recipe_ingredientes_list {
+    font-weight: 400;
+    font-family: "outfit", sans-serif;
+    margin-bottom: 8px;
+    color: var(--fondo-roca-solido);
+}
+
+.division {
+    margin-bottom: 25px;
+}
+
+.instructions {
+    margin-bottom: 30px;
+}
+
+.instructions_title {
+    margin-bottom: 15px;
+    font-size: 2.3em;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cafe-solido);
+}
+
+.instructions_list_father {
+    color: var(--cafe-solido);
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    margin-left: 26px;
+    line-height: 1.8;
+}
+
+.text {
+    color: var(--fondo-roca-fuerte);
+    font-weight: 400;
+}
+
+.nutricion {
+    display: flex;
+    flex-direction: column;
+}
+
+.nutricion_title {
+    margin-bottom: 15px;
+    font-size: 2.3em;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cafe-solido);
+}
+
+.nutricion_description {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--fondo-roca-fuerte);
+    margin-bottom: 25px;
+}
+
+.nutrition_table_calories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-family: "Outfit", sans-serif;
+}
+
+.division_table {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.calories:nth-child(1), .carbs:nth-child(1), .protein:nth-child(1), .fat:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2; 
+    color: var(--fondo-roca-fuerte);
+    margin-left: 28px;
+}
+
+.calories:nth-child(2), .carbs:nth-child(2), .protein:nth-child(2), .fat:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3; 
+    color: var(--cafe-solido);
+    font-weight: 800;
 }
